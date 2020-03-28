@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+     <!--JQUERY CDN  -->   
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous">
+    </script>
+
+    <!-- BOOTSTRAP & CSS FILE & GOOGLE FONT -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="row" style="background-color: hsla(24, 100%, 75%, 0.842);">    
+            <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">HEADER</div>
+        <div class="row">
+            <div class="col-lg-4"></div>
+
+            <div class="col-lg-4" id="text" style="background-color: hsla(167, 100%, 75%, 0.842);">Simple...Productos que tenemos disponible a buen precio</div>
+
+            <div class="col-lg-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2"><img src="S-15730.webp" height="300px" width="200px"></div>
+            <div class="col-lg-2"><img src="men_s_casio_g-shock_square_army_green_resin_strap_digital_watch_dw5610su-3-1-20085023-t1585259065.jpg" height="300px" width="200px"></div>
+            <div class="col-lg-2"><img src="proteina.jpeg" height="300px" width="200px"></div>
+            <div class="col-lg-2"><img src="reloj.jpeg" height="300px" width="200px"></div>
+            <div class="col-lg-2"><img src="l-ensure-original-vanilla-7545-3057.jpg" height="300px" width="200px"></div>
+            <div class="col-lg-2"><img src="shoes_ia94737.jpg" height="300px" width="200px"></div>
+        </div>
+        <br>
+        <div class="row" id="text" style="background-color: hsla(78, 100%, 75%, 0.842);">Alquileres Temporales tambien disponible</div>
+        <br>
+        <div class="row">
+            <div class="col-lg-6"><img src="apt.jpg" height="400px" width="500px"></div>
+            <div class="col-lg-6"><img src="Untitled.jpg" height="400px" width="500px"></div>
+        </div>
+        <br>
+        <br>
+
+    </div>
+
+</body>
+<script>
+    $('dropdown-menu').on('click', function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+</script>
+</html>
